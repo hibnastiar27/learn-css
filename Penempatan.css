@@ -1,0 +1,16 @@
+/*
+Menyimpan css di dalam html
+-embed menggunakan tag <style> dan atribut style
+-external menghubungkan file css dan html menggunakan tag <link>
+*/
+
+h3 {
+  color: blueviolet;
+  font-family:'Segoe UI';
+  font-size: 24px;
+}
+
+p{
+  font-family: 'Times New Roman';
+  color: blue;
+}
