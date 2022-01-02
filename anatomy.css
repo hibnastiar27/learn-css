@@ -1,0 +1,6 @@
+/*
+selector {properti: value;}
+selector digunakan untuk memilih element pada html
+elementnya bebas, dipilih berdasarkan tag,id,class bahkan pola/pattern
+*/
+selector{color: aqua;}
