@@ -1,0 +1,46 @@
+/*
+Font Styling
+font-family : mengatur jenis font yang digunakan
+font-size : mengatur ukuran font
+font-weight : ketebalan font
+font-variant : mengubah font menjadi small caps
+line-height : mengatur spasi antar baris
+*/
+
+h2{
+  /* nama font, generik family */
+  font-family: Roboto ,sans-serif;
+  /* px, % ,em */
+  font-size: 100px;
+  /* lighter, normal,100-900, bold, bolder */
+  font-weight: normal;
+  /* small-caps, normal */
+  font-variant: small-caps;
+  /* normal, italic, oblique */
+  font-style: italic;
+}
+
+h1{
+  /* nama font, generik family */
+  font-family: Roboto ,sans-serif;
+  /* px, % ,em */
+  font-size: 100px;
+  /* lighter, normal,100-900, bold, bolder */
+  font-weight: normal;
+  /* small-caps, normal */
+  font-variant: small-caps;
+  /* normal, italic, oblique */
+  font-style: oblique;
+}
+
+p{
+  font-family: -apple-sysytem;
+  /* nromal, px, em */
+  line-height: 50px;
+}
+
+/* 
+font : font-style, font-variant, font weight, font size/line-height, font family
+
+font size dan font family wajib ada
+*/
