@@ -1,0 +1,31 @@
+/*
+text-styling
+color: memberi warna pada tulisan
+tezt-align: mengatur format paragraf/teks
+text-indent: memberi indentasi pada paragraf/teks
+text-decoration: mengatur dekorasi pada teks
+text-transform: mengubah jenis huruf besar, kecil/kapital
+letter-spacing: spasi antar huruf
+word-spacing: spasi antar kata
+*/
+
+h1 {
+  font-size: 80px;
+  /* nama warna, hexadecimal, rgb */
+  color: skyblue;
+  /* none, underline, overline, line-through */
+  text-decoration: line-through;
+}
+
+p{
+  /* left, right, center, justify */
+  text-align: justify;
+  /* px, % */
+  text-indent: 34px;
+  /* none,lowercase, uppercase, capitalize */
+  text-transform: capitalize;
+  /* normal, px */
+  letter-spacing: normal;
+  /* normal, px */
+  word-spacing: 5px;
+}
