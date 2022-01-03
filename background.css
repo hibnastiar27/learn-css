@@ -1,0 +1,25 @@
+/*
+background,
+background-color, warna
+background-image, gambar
+background-position, mengatur posisi bg
+background-repeat, mengatur pengulangan gambar pada bg
+*/
+
+body{
+  background-color: khaki;
+  background-image: url(bg1.png);
+  /*no-repeat, repeat-x samping, repeat-y atas-bawah*/
+  background-repeat: no-repeat;
+  /*
+  top/button/center (y) 
+  left/right/center (x)
+  */
+  background-position: top center;
+}
+
+
+/*
+background: color url() position repeat;
+background: skyblue url(bg1.png) top right no-repeat; 
+*/
