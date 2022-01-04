@@ -1,0 +1,67 @@
+/*
+psudo-class, kelas semu yang dimiliki oleh sebuah elemen HTML, yang membuat kita dapat mendefinisikan style pada "keadaan tertentu" dari elemen tsb.
+*/
+
+/*
+pseudo-class yang berhubungan dg link
+:link, style default 
+:hover, cursor berada diatas link
+:active, ketika link di klik (keadaan aktif)
+:visited, ketika sudah pernah dikunjungi linknya
+*/
+
+.hello{
+  color: rgb(4, 129, 35);
+}
+
+.hello:hover{
+  color: rgb(129, 255, 160);
+  font-family: Segoe UI;
+  font-size: larger;
+}
+
+.hello:active{
+  font-size: small;
+  font-style: italic;
+}
+
+.hello:visited{
+  color: red;
+}
+
+/*
+pseudo-class yang berhubungan dg posisi elemen
+:first-child, memilih elemen pertama dari sebuah parent
+:last-child, memilih elemen terakhir dari sebuah parent
+:nth-child(n)
+*/
+li:first-child a{
+  color: red;
+}
+
+li:last-child a{
+  color: aqua;
+}
+
+/*
+even, genap
+odd, ganjil
+n digunakan untuk 
+*/
+li:nth-child(3n+1) a{
+  color: rgb(112, 63, 4);
+}
+
+li:nth-child(odd) a:hover{
+  color: aqua;
+}
+
+/*
+pseudo-class yang berhubungan dg posisi elemen (2)
+first-of-type, memilih elemen pertama dari sebuah jenis/tipe tag
+last-of-type, memilih elemen terkahir dari sebuah jenis/tipe tag
+*/
+
+p:last-of-type{
+  color: tomato;
+}
