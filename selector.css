@@ -1,0 +1,56 @@
+/*
+Selector
+digunakan mengenali sebuah element di HTML yang akan di beri style\
+elemen HTML,
+id,
+class,
+complex selector,
+*/
+
+/* elemen, Apapun yang ada di element body akan berubah */
+body{
+  background-color: rgb(9, 8, 100);
+}
+
+/* koma, digunakan untuk menggabungkan elemen */
+h1,h2{
+  color: rgb(253, 253, 230);
+} 
+
+/* spasi, digunakan masuk ke dalam elemen yang di tuju/spesifik */
+ul li a{
+  color: aqua;
+}
+
+ol li a{
+  color: bisque;
+}
+
+/* Id menggunakan #(nama id nya) */
+/*
+sebuah elemen html hanya boleh 1 
+setiap halaman tidak boleh memiliki nama id yang sama
+dapat digunkaan penanda halaman untuk link
+digunakan untuk javascript
+sebagiknya tidak digunakan untuk css
+*/
+#p1{
+  color: aqua;
+}
+
+/* class menggunakan . */
+.p2{
+  color: bisque;
+}
+
+.cetak-tebal{
+  font-weight: bolder;
+}
+
+/* mencari elemen p dengan class cetak-tebal */
+p.cetak-tebal{
+  font-size: 100px;
+}
+
+
+
