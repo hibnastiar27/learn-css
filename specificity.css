@@ -1,0 +1,46 @@
+/*
+setiap deklarasi css (selektor) memiliki berat yang berbeda,
+berat tsb menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selektor
+*/
+
+
+/* jika menuliskan selektor yang sama maka, akan tampilkan selektor terkahir */
+p{
+  color: red;
+}
+
+p{
+  color: green;
+}
+
+/*
+id h1 lebih spesifik dibandingkan p
+*/
+#h1{
+  color: red;
+}
+
+h1{
+  color: green;
+}
+
+/*
+menghitung spesifikasi
+0000 
+4321 (penomoran)
+1=element (p0
+2=class (.p)
+3=id (#p)
+4=inline 
+*/
+
+ul#sarapan li{
+  /* 0102 */
+  /* 0101 */
+  color: green;
+}
+
+ul#sarapan li.nasgor{
+  /* 0010 */
+  color: red;
+}
