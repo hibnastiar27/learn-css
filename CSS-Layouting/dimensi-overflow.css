@@ -1,0 +1,58 @@
+/*
+Dimensi widht, height
+px, %
+in, cm, mm, pt, pc
+*/
+
+/*
+Overflow
+visible, keadaan default
+auto, relative tergantung kontennya
+hidden, menyembunyikan jika melewati box
+scroll, terdapat scroll meskipun tidak melewati box
+*/
+
+.zero{
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+}
+
+.satu{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+.dua{
+  width: 100%;
+  background-color: lightblue;
+}
+
+.auto1{
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+  overflow: auto;
+}
+.auto2{
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  overflow: auto;
+}
+
+.hidden{
+  width: 200px;
+  height: 100px;
+  background-color: lightgreen;
+  overflow: hidden;
+}
+
+.scroll{
+  width: 300px;
+  height: 300px;
+  background-color: lightgreen;
+  overflow: scroll;
+}
+

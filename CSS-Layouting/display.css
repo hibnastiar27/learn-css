@@ -1,0 +1,59 @@
+/*
+//tag div navigasi//
+.navigasi{
+  background-color: pink;
+}
+
+//tag div main// 
+.main{
+  background-color: green;
+}
+
+//tag div dan span//
+.main span{
+  color: aquamarine;
+}
+*/
+
+/*Display
+Setiap tag pada html berada di dalam sebuah kotak.
+properti display pada css mengatur perilaku kotak tersebut
+
+value display,
+inline, (b,strong, i, em, a, span, sub, sup, button, input, label, select, textarea, ...)
+
+inline-block, digunakan untuk memanipulasi inline
+
+block, (h1-h6, p, ol, ul, li, form, hr, div, ...)
+
+none, menghilangkan tampilan
+*/
+
+/* inline */
+a {
+  background-color: chartreuse;
+  width: 200px;
+  height: 200px;
+  /* inline-block */
+  display: inline-block;
+}
+
+/* block */
+.main {
+  width: 600px;
+  background-color: greenyellow;
+}
+
+.main h2{
+  background-color: hotpink;
+}
+
+/* none */
+img{
+  display: none;
+}
+
+/* ubah block ke inline */
+.navigasi li{
+  display: inline;
+}
