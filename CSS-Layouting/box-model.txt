@@ -1,0 +1,25 @@
+/*
+  Margin, Area transparan di sekitar kotak (diluar border)
+  Padding, Area transparan di dalam kotak (Antara content dan boder)
+  boder, batas disekeliling content dan padding
+  content, berada dalam box, bisa berupa gambar atau text
+    yang bisa diatur css box model adalah margin, padding dan border
+  #MARGIN
+    margin-top
+    margin-right
+    margin-button
+    margin-left
+    margin
+  #PADDING
+    padding-top
+    padding-right
+    padding-button
+    padding-left
+    padding
+  #BORDER
+    border-top
+    border-right
+    border-button
+    border-left
+    border
+*/
