@@ -1,0 +1,13 @@
+*{
+  /* terdapat margin bawaan, seperti div, h1-h6 dan juga p */
+  margin: 0px;
+}
+
+/* menggunakan tanda (*))(selektor universal)untuk menyeleksi semuanya */
+
+div{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 0px;
+}
