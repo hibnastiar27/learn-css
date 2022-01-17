@@ -1,0 +1,83 @@
+/* 
+Float,None,Left,Right
+normal flow,
+out-of flow
+*/
+
+/*
+Kondisi pemakaian float
+  text wraping, teks mengelilingi gambar/objek
+  image galery, rangkaian gambar yang menjadi galery
+  multi-column layout, halaman dengan beberapa kolom
+  dan lain lain
+*/
+
+.container, .container2, .container3, .container4{
+  width: 600px;
+  border: 1px solid slategray;
+  margin: auto;
+  padding: 5px;
+}
+
+.satu, .dua, .tiga{
+  width: 100px;
+  height: 100px;
+}
+
+.satu{
+  background-color: salmon;
+}
+
+/* float */
+.dua{
+  background-color: seagreen;
+  float: right;
+}
+
+.tiga{
+  background-color: slateblue;
+}
+
+/* text wraping */
+.gambar{
+  width: 300px;
+  float: right  ;
+  margin-right: 10px;
+}
+
+/* image galery */
+.kotak {
+  width: 80px;
+  height: 80px;
+  color: white;
+  background-color: salmon;
+  text-align: center;
+  line-height: 80px;
+  font-size: 34px;
+  margin: 2px;
+  float: right;
+}
+
+/* multi-colom layout */
+.kiri{
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tengah {
+  width: 400px;
+  height: 100px;
+  background-color: seagreen;
+  float: left;
+}
+
+.kanan {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  float: left;
+}
