@@ -1,0 +1,103 @@
+/*
+  Terdapat 3 cara untuk memecahkan masalah float
+    menggunakan properti overflow
+    menggunakan div kosong (clear: lef,right or both)
+    menggunakan micro clearfix
+*/
+
+.container,
+.container2,
+.container3,
+.container4 {
+  width: 600px;
+  border: 1px solid slategray;
+  margin: auto;
+  padding: 5px;
+  /* overflow:auto; pada containernya */
+  /* overflow: auto; */
+}
+
+.satu,
+.dua,
+.tiga {
+  width: 100px;
+  height: 100px;
+}
+
+/* basic float */
+.satu {
+  background-color: salmon;
+}
+
+.dua {
+  background-color: seagreen;
+  float: right;
+}
+
+.tiga {
+  background-color: slateblue;
+}
+
+/* float untuk text wraping */
+.gambar {
+  width: 300px;
+  float: right;
+  margin-right: 10px;
+}
+
+/* dloat untuk image galery */
+.kotak {
+  width: 80px;
+  height: 80px;
+  color: white;
+  background-color: salmon;
+  text-align: center;
+  line-height: 80px;
+  font-size: 34px;
+  margin: 2px;
+  float: right;
+}
+
+/* float untuk multi-colom layout */
+.kiri {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tengah {
+  width: 400px;
+  height: 100px;
+  background-color: seagreen;
+  float: left;
+}
+
+.kanan {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  float: left;
+}
+
+/* div kosong clear float */
+/* .kosong{
+  clear: both;
+} */
+
+/* Clear Fix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
