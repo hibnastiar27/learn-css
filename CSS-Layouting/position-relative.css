@@ -1,0 +1,29 @@
+/*
+Position:
+static(default) 
+Relative, maju 1 layer kedepan, ruangannya masih ada,
+absolute,
+fixed,
+
+selain static, dapat menggunakan elemen 
+(top,left,bottom,right)
+*/
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.satu {
+  background-color: bisque;
+}
+
+.dua {
+  background-color: blueviolet;
+  position: relative;
+  top: 20px;
+}
+
+.tiga {
+  background-color: brown;
+}
