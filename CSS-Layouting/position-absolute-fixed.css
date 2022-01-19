@@ -1,0 +1,47 @@
+/*
+position absolute dan fixed
+*/
+body {
+  height: 2000px;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+/*
+Fixed,relative kepada windows browsernya
+jika di scrol elemennya akan terkunci
+*/
+.satu {
+  background-color: brown;
+  position: fixed;
+  height: 32px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+/* 
+Absolute, maju 1 layer kedepan, ruang yang ditempati dianggap tidak ada
+posisinya relative kepada parentnya, selama parent-nya memiliki posisi yang non-static
+*/
+.dua {
+  background-color: burlywood;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.tiga {
+  background-color: cornflowerblue;
+}
+
+.container {
+  height: 650px;
+  width: 600px;
+  border: 10px solid slateblue;
+  position: relative;
+}
