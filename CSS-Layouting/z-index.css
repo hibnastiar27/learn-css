@@ -1,0 +1,28 @@
+/*
+z-index, mengatur posisi tumpukan kedepan atau kebelakang
+*/
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.satu {
+  background-color: blue;
+  z-index: -999;
+}
+
+.dua {
+  background-color: blueviolet;
+  top: 100px;
+  left: 100px;
+  z-index: 999;
+}
+
+.tiga {
+  background-color: burlywood;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+}
