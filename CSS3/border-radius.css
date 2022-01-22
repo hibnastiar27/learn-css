@@ -1,0 +1,29 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  float: left;
+}
+
+.pertama {
+  background-color: coral;
+  border-radius: 0 20% 0 20%;
+  background-image: url(profil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kedua img {
+  border-radius: 20%;
+  /* overflow hiden untuk emnyembunyikan apapun yang keluar dari class ini */
+  overflow: hidden;
+  width: 100px;
+}
+
+.ketiga {
+  color: aliceblue;
+  background-color: coral;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
