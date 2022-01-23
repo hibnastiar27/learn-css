@@ -1,0 +1,44 @@
+body {
+  background-image: url(bg1.png);
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.kotak1 {
+  /* pengganti opacity, tapi berpengaruh di warna saja transparannya*/
+  /* RGBa (red, green, blue, alpha(0-1))*/
+  background-color: rgba(114, 155, 39, 0.5);
+}
+
+.kotak2 {
+  width: 120px;
+  height: 120px;
+  background-color: purple;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+
+.kotak3 {
+  /* HSLa (Hue, Saturation, Light, a) */
+  background-color: hsla(75, 100%, 55%, 0.5);
+}
+
+.kotak4 {
+  width: 120px;
+  height: 120px;
+  background-color: purple;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
