@@ -1,0 +1,19 @@
+body {
+  background: rgb(1, 35, 51);
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+  border-radius: 50%;
+  background-color: rgba(176, 255, 183, 0.712);
+}
+
+.pertama {
+  box-shadow: 20px 20px 60px rgba(255, 0, 0, 0.6);
+}
+
+.kedua {
+  box-shadow: -20px -20px 60px rgba(52, 231, 255, 0.6);
+}
