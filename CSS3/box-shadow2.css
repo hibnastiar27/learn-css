@@ -1,0 +1,45 @@
+body {
+  height: 2000px;
+  background: rgb(0, 53, 78);
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+  /* border-radius: 50%; */
+  background-color: rgba(219, 255, 222, 0.712);
+}
+
+.pertama {
+  /*
+    box-shadow:(inset) (x-ofset) (y-ofset) (blur) (spread) (color)
+      inset=shadow tapi kedalem
+      spread=ukuran shadownya, bisa negatif/mines
+      bisa multi box-shadow meggunakan koma (,)
+  */
+  box-shadow: 20px 20px 60px 5px rgba(255, 0, 0, 0.7),
+    -20px -20px 60px 5px rgba(135, 201, 255, 0.7);
+}
+
+.kedua {
+  box-shadow: inset 20px 20px 55px -10px rgb(1, 10, 37),
+    inset -20px -20px 55px -10px whitesmoke;
+}
+
+.kedua h1 {
+  color: rgb(0, 0, 0);
+  line-height: 150px;
+  text-align: center;
+}
+
+.ketiga {
+  box-shadow: 0px 25px 20px -10px rgb(0, 0, 0);
+}
+
+/* Implementasi Multiple shadow */
+.ketiga:hover {
+  box-shadow: 0px 40px 20px -30px rgba(0, 0, 0, 0.404),
+    inset 10px 10px 20px -10px rgb(0, 0, 0);
+  margin-top: 40px;
+}
