@@ -1,0 +1,50 @@
+/*
+  bukan property css3,
+  melainkan value untuk bg-image/bg
+  background-image:
+  backgrund:
+  linier gradient, gradasi warna lurus 
+*/
+
+div {
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+
+  background-color: salmon;
+}
+
+.satu {
+  /* linear-gradient(warna1,warna2) */
+  background: linear-gradient(lightblue, salmon, yellow);
+}
+
+.dua {
+  /* 
+  multiple color
+  linear-gradient (warna1,..,warna(n)) 
+  */
+  /*
+    sudut
+    +/-(1-360deg)
+  */
+  background: linear-gradient(90deg, lightblue, salmon, yellow);
+}
+
+.tiga {
+  /*
+    arah
+    to botom/to top/to left/to right
+    to left top/to left bottom/to right top/to tight bottom
+  */
+  background: linear-gradient(to right bottom, lightblue, salmon);
+}
+
+.empat {
+  /*
+    arah
+    to botom/to top/to left/to right
+    to left top/to left bottom/to right top/to tight bottom
+  */
+  background: linear-gradient(to right, lightblue 60%, salmon 75%);
+}
