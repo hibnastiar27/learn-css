@@ -1,0 +1,21 @@
+@font-face {
+  /* penamaan font */
+  font-family: "SedgwickAve";
+  /* sumber file font nya */
+  src: url("SedgwickAve-Regular.ttf") format("truetype");
+}
+
+h1 {
+  font-size: 150px;
+  text-align: center;
+}
+
+/* pakek font dari google */
+.satu {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+/* pakek @font-face */
+.dua {
+  font-family: "SedgwickAve";
+}
