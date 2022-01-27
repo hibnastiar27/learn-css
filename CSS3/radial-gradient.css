@@ -1,0 +1,44 @@
+div {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.satu {
+  /*
+    simple sintax
+    bisa pakek bg atau bg-img
+    multiple color, color stop juga berfungsi disini
+    :radial-gradient(warna-awal,..., warna-akhir)
+  */
+  background: radial-gradient(
+    rgb(181, 176, 255) 30%,
+    rgb(164, 53, 255),
+    rgb(1, 95, 99)
+  );
+}
+
+.dua {
+  /*
+    sintaks lengkap
+    : radial-gradient(tipe jangkauan (at) posisi-y posisi-x, warna1, warna2, ..., warna(n))
+    tipe= elips(defalut) dan circle
+    jangkauan= lebar gradasi yang diberikan
+      closet-corner: terdekat dari sudut
+      closet-side: terdekat dari sisi
+      farthest-corner: terjauh dari sudut
+      farthest-side: terjauh dari sisi
+    at= digunakan untuk penambahan value posisi
+    posisi-y= vertical
+      top
+      center
+      bottom
+      px
+    posisi-x= hotizontal
+      left
+      center
+      right
+      px
+  */
+  background: radial-gradient(circle farthest-side at top left, red, blue);
+}
