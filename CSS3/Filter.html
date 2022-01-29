@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <title>FIlter</title>
+  <style>
+    /* Filter
+    blur (px) 
+    brightness (angka / %) (kecerahan)
+    contrast (angka / %)
+    saturate (angka / %)
+    grayscale (angka / %)        
+    sepia (angka / %) (Kadar kuning)
+    hue-rotate (adeg) (Perubahan Warna)
+    invert (angka / %) (negativ effect)
+    opacity (angka / %) (lebih cepat dibanding properti css)
+    drop-shadow (sama seperti box-shadow) (bisa berpengaruh ke gambar transparan)
+    */
+    img {
+      width: 300px;
+      filter: blur(3px) grayscale(100%);
+      transition: 1s;
+    }
+
+    img:hover {
+      filter: blur(0) grayscale(0);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="profil.jpg" alt="profil">
+</body>
+
+</html>
