@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <title>Animation</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      /*
+      animation:
+        name: nama keyframe
+        duration: waktu
+        fungsi: -
+        delay: -
+        iteration-count: perulangan (angka atau infinite)
+        direction: arah 
+          normal (default)
+          reverse (akhir ke awal)
+          alternate (awal->akhir->awal)
+          alternate-reverse (akhir->awal->akhir->langsung ke awal) (kalo ganjil smooth)
+        fill-mode: akhir transisi
+          none(default)
+          forwards: di posisi akhir
+          backwards: 
+          both
+        play-state: running atau paused (digunakan js)
+      */
+      animation: an-kotak 1s ease 2s infinite alternate both;
+    }
+
+    /* keyframnya bebas  */
+    @keyframes an-kotak {
+      0% {
+        width: 100px;
+      }
+
+      50% {
+        width: 400px;
+        height: 100px;
+      }
+
+      100% {
+        height: 400px;
+        width: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kotak"></div>
+</body>
+
+</html>
