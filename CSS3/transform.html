@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <title>Transform</title>
+  <style>
+    /* 
+    scale(angka), scaleX(angka) , scaleY(angka) , scale(x,y)
+      transform:scale(2,3)->diperbesar 2 kali sumbu x dan 3 kali disumbu y
+    rotate(deg) , rotateX(deg) , rotateY(deg), rotate (x,y)
+      rotate= (+)searah jarum jam, (-)sebalik jarum jam
+      rotateX= flip dengan sumbu X Horizontal
+      rotateY= flip dengan sumbu Y Vertical
+    skew(deg) , skewX(deg)  ,skewY(deg),
+      skew= miring/ condong
+    translate(px) , translateX(px) ,translateY(px)
+      translate=pindah/geser, jika keduananya X dan Y maka akan diagonal
+    */
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .kotak {
+      width: 200px;
+      height: 200px;
+      background-color: blueviolet;
+      /* Tengah kotak */
+      margin: 20px auto;
+      transition: 1s;
+    }
+
+    .kotak:hover {
+      transform: scale(1.5) rotate(180deg) translateY(-100px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kotak"></div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur molestias blanditiis veniam, distinctio
+    repudiandae, tempora aut placeat eligendi quisquam quod quas? Libero suscipit nobis illum numquam totam, nemo
+    voluptate dignissimos sed pariatur sit facilis dolor officiis quidem eos perspiciatis quibusdam consequatur odio,
+    culpa praesentium sequi. Deleniti, eligendi nostrum pariatur ea rem labore vero dolore dolores ad quisquam corporis
+    exercitationem porro recusandae consequatur ipsum eius numquam eaque facere iure eum unde mollitia aut quibusdam. Ut
+    quidem at voluptates ea laboriosam, corporis iure quibusdam incidunt, ducimus nesciunt suscipit esse enim iste nulla
+    provident rerum ad, quod error rem veritatis illum mollitia.</p>
+</body>
+
+</html>
