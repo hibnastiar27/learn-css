@@ -1,0 +1,78 @@
+:root {
+  /* root dari col */
+  font-size: 10px;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+.container1 {
+  width: 920px;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  /* parent dari col */
+  font-size: 20px;
+}
+
+.col {
+  width: 460px;
+}
+
+/* child dari container */
+.col-em {
+  float: left;
+  font-size: 2em;
+}
+
+.col-rem {
+  float: right;
+  /* relatif ke root (tag html/:root) */
+  font-size: 2rem;
+}
+
+/* tombol */
+
+.container2 {
+  /* 
+    ini parent yang mempengaruhi :
+    - border radius
+    - padding
+    - font size
+    elemen dibawah
+  */
+  font-size: 20px;
+}
+.btn {
+  text-decoration: none;
+  background-color: wheat;
+  border-radius: 0.5em;
+  color: black;
+  padding: 1em 3em;
+}
+
+.btn-sm {
+  font-size: 0.5em;
+}
+
+.btn-lg {
+  font-size: 2em;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* kesimpulan: kalo relatifnya pengen fix pakek REM, kalo bisa berubah ubah pakek em */
