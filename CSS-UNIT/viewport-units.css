@@ -1,0 +1,59 @@
+/*
+  viewport units
+    vh(viewport-height) : relatih tinggi viewport
+    vw(viewport-width) : relatih lebar viewport
+    vmin(viewport-minimum) : relatif dimensi terkecil viewport
+    vmax(viewport-maximum) : relatif dimensi terbesar viewport
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8em;
+}
+
+header {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(hero.jpg);
+  display: flex;
+}
+
+h1 {
+  /* font-size: 4rem; */
+  /* vw ukurannya hanya 4% dari total width(lebar) viewport user */
+  /* font-size: 4vw; */
+  /* vmax ukurannya 4% dari maksimal viewport user (bisa width/height) */
+  font-size: 4vmax;
+  line-height: 1.2em;
+  color: aliceblue;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin: auto;
+}
+
+section {
+  margin: 30px auto;
+  width: 80%;
+}
+
+section .detail {
+  font-size: 1.4rem;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.5 0;
+  margin-bottom: 2em;
+  color: #333;
+}
+
+section p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-indent: 1em;
+}
