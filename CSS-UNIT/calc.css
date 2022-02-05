@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+
+/*
+  calc()
+    bisa deikelola (length,angle,time,persentase,angka)
+      property: calc(expression)
+      Harus ada spasi
+      perkalian dan pembagian wajib dengan angka saja tanpa satuan (%,px,dll)
+    penjumlahan : width: calc(10px + 100px)
+    pengurangan : width: calc(100vw + 30px)
+    perkalian: margin: calc(30px * 10)
+    pembagian: margin: calc(30px / 3)
+    Order of Operation
+      width: calc(100% / 3 - 1rem * 3);
+    css variable / custom properties
+      :root {
+        --header-height: 32px;
+      }
+      .el {
+        panjang: 100% dari panjang wievport dikurangi dengan variable --header-height
+        height: calc(100vh - var(--header-height))
+      }
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  text-align: justify;
+}
+
+.container {
+  max-width: 800px;
+  width: calc(100vw - 4em);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: calc(6vw + 2rem);
+  text-align: center;
+  color: lightblue;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.full-size-img {
+  max-width: 100vw;
+  margin: 0 calc(-50vw + 50%);
+}
+
+.highlight {
+  background-color: lightblue;
+  text-align: center;
+  font-style: italic;
+  padding: 1.5em;
+  margin: 0 calc(-50vw + 50%);
+  /* 1x persent dari lebar viewport di tambah dengan 1.2x rem */
+  font-size: calc(1vw + 1.2rem);
+}
