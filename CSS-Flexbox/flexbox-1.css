@@ -1,0 +1,73 @@
+/*
+  flexbox
+    model layout 1 dimensi yang dapat mengatur jarak dan alignment antar item dalam sebuah container
+    hanya bisa mengatur horizontal / vertical dalam 1 baris/kolom jadi tidak bisa mengatur keduanya secara bersamaan
+  istilah pada flexbox
+    container/parent = merupakan wadah / pembungkus
+    items/child = elemen yang ada di dalam container
+    main axis = penataan elemen default bisa horizontal/vertical (biasanya horizontal)
+    cross axis = perubahan penataan elemen default, dari hotizontal ke vertical.
+    main size = ukuran dari container terpanjang (biasanya baris)
+    cros size = ukuran dari container terpendek (biasanya kolom)
+    main start = dari kiri ke kanan
+    main end = dari kanan ke kiri
+    cross start = dari atas ke bawah
+    cross end = dari bawah ke atas
+  penggunaan flexbox
+    container
+      display: flex | inline-flex |(membuat parent dan element didalamnya menjadi flex)
+      flex-direction: row | row-reverse | column | column-revers |(mengatur arah/urutan dari items di dalam container)
+      flex-wrap: nowrap | wrap | wrap-reverse | (wrap digunakan untuk memindahkan item kebawah)
+      justify-content: flex-start | flex-end | center | space-between | space-around | spcae-evenly | (alignment item hotizontal)
+      align-item: flex-start | flex-end | center | stretch | baseline(sejajar dengan content itemsnya) |(alignment itemn vertical)
+      align-content: flex-start | flex-end | center | stretch | space-between | space-around |
+    items
+      order: angka | (mengatur urutan)
+      flex-grow / flex: angka | (mengatur ukuran items)
+      align-self: auto | center | baseline | flex-start | flex-end | stetch
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  border: 5px solid black;
+  margin: 25px auto;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container div {
+  /* width: 100px;
+  height: 100px; */
+  background-color: rgb(153, 128, 247);
+  align-self: flex-start;
+  margin: 2px;
+  flex: 1;
+}
+
+.container div.kotak3 {
+  flex: 3;
+  align-self: flex-end;
+}
+
+/* .kotak1 {
+  order: 4;
+}
+
+.kotak2 {
+  order: 3;
+}
+
+.kotak3 {
+  order: 2;
+}
+
+.kotak4 {
+  order: 1;
+} */
