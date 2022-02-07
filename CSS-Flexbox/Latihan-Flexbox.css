@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container1 {
+  background-color: white;
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* digunakan supaya elemen tidak mempengaruhi ukuran*/
+  box-sizing: border-box;
+  display: flex;
+}
+
+.container1 .colom-utama {
+  flex: 2.5;
+  order: 2;
+}
+.container1 .sidebar1 {
+  flex: 0.8;
+  order: 1;
+}
+.container1 .sidebar2 {
+  flex: 1;
+  order: 3;
+}
+/* Akhir Latihan 1 */
+
+/* Latihan 2 */
+.container2 {
+  /* kalo responsive pakek max/min width */
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.layanan.satu {
+  background-color: rgb(124, 255, 124);
+}
+
+.layanan.dua {
+  background-color: rgb(124, 203, 255);
+}
+
+.layanan.tiga {
+  background-color: rgb(255, 124, 244);
+}
+
+/* responsive */
+/* Media query */
+/* diatas 600px akan di jalankan media query */
+@media (min-width: 600px) {
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+}
