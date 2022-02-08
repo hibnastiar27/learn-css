@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(182, 182, 182);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* latihan 3 */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+/* akhir latihan 3 */
+
+/* latihan 4 */
+.container2 {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* Akhit Latihan 4 */
+
+/* Latihan 5 */
+.container3 {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+.container3 .kotak {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  background-color: rgb(255, 174, 174);
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* responsive */
+@media (min-width: 600px) {
+  /* responsif lat 3 */
+  .thumbnail {
+    width: 25%;
+  }
+
+  /* responsif lat 4 */
+  .container2 {
+    display: flex;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .card.besar {
+    transform: scale(1.15);
+  }
+}
